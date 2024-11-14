@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+}
+
+header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    /* z-index: 2; */   
+    border-radius: 0px 0px 50px 50px;
+    background: linear-gradient(135deg, #d3d3d3, #f1f1f1);
+}
+
+header p{
+    font-family: "Italiana", sans-serif;
+}
+nav {
+    color: #fff;
+    padding: 40px;
+    display: flex;
+    height: 100px;
+    border-radius: 0px 0px 30px 30px;
+    justify-content: space-between;
+}
+
+.how{
+    color: #ad2323;
+}
+
+.how1:hover{
+    color: #ad2323;
+    text-decoration: none;
+}
+
+img {
+    height: 80px;
+    position: absolute;
+    left: 180px;
+    top: 13px;
+}
+
+.name p {
+    font-size: 30px;
+    position: absolute;
+    color: black;
+    left: 270px;
+    top: 35px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    position: absolute;
+    right: 80px;
+    top: 30px;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+.background-wrapper {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('banner-bg-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(1px);
+    /* z-index: -1;  */
+}
+
+.box1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 800px;
+    padding: 40px;
+    color: #fff;
+    /* background-color: rgba(87, 90, 87, 0.6);  */
+    /* border-radius: 40px; */
+    text-align: center;
+}
+
+.box1 h2 {
+    color: #f3f3f3;
+    margin-bottom: 20px;
+}
+
+.box1 p {
+    color: #ddd;
+    line-height: 1.6;
+}
+
+@keyframes shine {
+    0% {
+        background-position: -100%;
+    }
+    100% {
+        background-position: 200%;
+    }
+}
+
+.M2 button {
+    background: linear-gradient(135deg, #f0f0f0, #d3d3d3, #f0f0f0); 
+    background-size: 200% 100%; 
+    color: #333;
+    border: none;
+    border-radius: 30px;
+    padding: 15px; 
+    transition: transform 0.3s, background 0.5s;
+    left: 310px;
+    top: 330px;
+    position: absolute;
+    animation: shine 2s infinite linear; 
+}
+.box {
+    padding: 80px;
+    width: 70%;
+    height: 400px;
+    margin-left: 230px;
+    /* margin: -20px 0 90px 0;  */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    color: black;
+    background-image: url("https://tse3.mm.bing.net/th?id=OIP.8bQP-WF6Tc-b_BFe9vJ0tgHaEK&pid=Api&P=0&h=180");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#home {
+    margin-top: 50px;
+}
+
+#home .box h2{
+    margin: 15px;
+}
+#home .box p{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    line-height: 1.6;
+    color: #fff;
+}
+
+.box h2 {
+    color: #f3f3f3;
+    justify-content: center;
+    display: flex;
+}
+
+#about .box p {
+    margin: 10px;
+    line-height: 1.6;
+    color: #fff;
+}
+
+#about h2{
+    margin: -15px;
+}
+
+.box a {
+    color: rgb(233, 225, 132); 
+    text-decoration: underline; 
+}
+
+#contact h2{
+    margin: -20px;
+}
+
+.contact-list {
+    list-style-type: none; 
+    padding: 0; 
+    margin-left: 50px;
+    color: #fff;
+}
+
+.contact-list li {
+    margin-bottom: 30px; 
+}
+
+.box a:hover {
+    color: rgb(105, 140, 236);
+    text-decoration: none;
+}
+
+#skills .box h2 {
+    color: #f3f3f3;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#skills .skills-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+#skills .skills-list li {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    display: flex; 
+    justify-content: flex-start; 
+}
+
+#skills .skills-list li::before {
+    content: "✔️ "; 
+    font-size: 20px;
+}
+
+#projects {
+    text-align: center;
+    width: 70%;
+}
+
+#projects h2 {
+    font-size: 36px;
+    margin-top: 90px;
+    color: #706868;
+    font-family: "Roboto", sans-serif;
+    position: relative;      
+    left: 70%;               
+    transform: translateX(-50%);
+}
+
+.arrow {
+    font-size: 30px;
+    font-weight: bold;
+    color: #0077b5;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-gallery {
+    display: flex;
+    flex-direction: column; 
+    gap: 40px; 
+    /* margin-top: 20px; */
+    align-items: center;
+    position: relative;
+    left: 200px;
+}
+
+.portfolio-item {
+    width: 100%;  /* Make each item take full width of the container */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-decoration: none;
+    background-color: #fff;
+    color: #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio-item h3 {
+    font-size: 22px;
+    margin: 15px;
+    color: #333;
+}
+
+.portfolio-item p {
+    font-size: 16px;
+    margin: 0 15px 15px;
+    color: #666;
+    line-height: 1.6;
+}
+
+
+@media (max-width: 768px) {
+    .portfolio-item {
+        width: 100%;
+    }
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #0f2592;
+    border-radius: 20px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(213, 221, 236);
+}
+
+.declare {
+    position: relative;
+    bottom: 90px;
+    width: 100%;
+    text-align: center; 
+    font-size: 13px; 
+    color: #1c1717; 
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: auto;
+}
+
+footer p {
+    margin: 5px;
+}
+
+footer a {
+    color: #11c5cb;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: antiquewhite;
+}
+
+#skills,
+#portfolio,
+#about,
+#contact {
+    margin-top: 100px; 
+    margin-bottom: 100px; 
+}   
